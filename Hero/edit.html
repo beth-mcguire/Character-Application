@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Create Character</title>
+    <link rel="stylesheet" href="css/edit.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Characters Application</h1>
+      <h3>Keep Details of Your Characters Here</h3>
+    </header>
+
+    <div class="container">
+      <form id="form" action="index.html">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Name" id="name" />
+        <label for="traits">Traits</label>
+        <input type="text" name="traits" placeholder="Traits" id="traits" />
+        <label for="bio">Biography</label>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        <input type="submit" value="Save Changes" id="home" />
+      </form>
+      <button id="remove">Remove Character</button>
+      <div class="edit">
+        <span id="last-edited"></span>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/edit.js"></script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c4c4c4;
+  line-height: 1.1;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* App Containe */
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* H E A D E R */
+
+header {
+  background-color: #2469fd;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #000;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+header h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+
+#form {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+#form input,
+#form select {
+  margin-right: 3rem;
+  padding: 8px;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+/* U T I L I T I E S */
+
+#add {
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  margin-top: 1rem;
+  color: #fff;
+  background-color: #2469fd;
+  cursor: pointer;
+  box-shadow: 3px 5px #000;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+#add:hover {
+  padding: 9px;
+  box-shadow: 1px 3px #000;
+  background: #1b17ff;
+  transition: all 0.3s;
+}
+
+/* Character Divs */
+
+.pDiv {
+  margin-bottom: 1rem;
+  background: #f5f4f4;
+  padding: 1rem;
+  border: 2px solid #000;
+  font-family: "slabo";
+  border-radius: 20px;
+}
+
+.pDiv p {
+  color: #2469fd;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.pDiv p span {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.newBtn {
+  padding: 5px;
+  margin-right: 5px;
+  background: #fd2424;
+  color: #fff;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+footer {
+  width: 100%;
+  background: #012f91;
+  padding: 12px;
+  text-align: center;
+  color: #000;
+  margin-top: 1rem;
+}
+
+footer a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+footer a:hover {
+  font-size: 1.2rem;
+}
+
+/* Media Query */
+
+@media (max-width: 769px) {
+  .container {
+    max-width: 100%;
+  }
+  #form {
+    grid-template-columns: 1fr;
+  }
+  #form input,
+  #form select {
+    width: 100%;
+  }
+
+  span {
+    display: block;
+  }
+  .newBtn {
+    margin-right: 0;
+    margin-right: 5px;
+  }
+}
